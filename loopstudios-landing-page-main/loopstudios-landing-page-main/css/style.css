@@ -78,6 +78,43 @@ body {
     overflow: hidden;
     width: 55%; }
 
+.header {
+  height: 95vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/desktop/image-hero.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  margin: 0 auto;
+  padding: 5rem 12rem; }
+  .header .container {
+    width: 100%;
+    height: 100%;
+    position: relative; }
+  .header__logo {
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .header__navigation {
+    position: absolute;
+    top: 0;
+    right: 0; }
+    .header__navigation--list {
+      list-style-type: none; }
+    .header__navigation--item {
+      display: inline-block;
+      margin: 0.5rem 0 0 2rem; }
+    .header__navigation--link {
+      text-decoration: none;
+      color: white; }
+  .header__text-box {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    border: 2px solid white;
+    padding: 2rem 3rem;
+    overflow: hidden;
+    width: 55%; }
+
 .section-about {
   margin: 12rem 0;
   position: relative;

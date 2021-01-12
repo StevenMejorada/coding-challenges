@@ -15,4 +15,44 @@ body {
 
 body {
   font-family: "Alata", sans-serif;
-  font-size: 1em; }
+  font-size: 1em;
+  font-weight: 400; }
+
+.heading-primary {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 300;
+  line-height: 1; }
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/desktop/image-hero.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  margin-bottom: 20rem; }
+  .header__logo {
+    position: absolute;
+    top: 10%;
+    left: 10%; }
+  .header__navigation {
+    position: absolute;
+    top: 10%;
+    right: 10%; }
+    .header__navigation--list {
+      list-style-type: none; }
+    .header__navigation--item {
+      display: inline-block;
+      margin: 0.5rem 0 0 2rem; }
+    .header__navigation--link {
+      text-decoration: none;
+      color: white; }
+  .header__text-box {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    border: 2px solid white;
+    padding: 2rem 3rem;
+    width: 45%; }

@@ -11,7 +11,8 @@ html {
   font-size: 93.75%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: white; }
 
 body {
   font-family: "Alata", sans-serif;
@@ -26,21 +27,40 @@ body {
   font-weight: 300;
   line-height: 1; }
 
+.heading-secondary {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 300; }
+
+.paragraph {
+  color: #8c8c8c;
+  line-height: 1.7;
+  font-size: 1.1rem; }
+
+.u-margin-bottom {
+  margin-bottom: 2rem; }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/desktop/image-hero.jpg");
   background-size: cover;
   background-position: top;
   position: relative;
-  margin-bottom: 20rem; }
+  margin: 0 auto;
+  padding: 5rem 12rem; }
+  .header .container {
+    width: 100%;
+    height: 100%;
+    position: relative; }
   .header__logo {
     position: absolute;
-    top: 10%;
-    left: 10%; }
+    top: 0;
+    left: 0; }
   .header__navigation {
     position: absolute;
-    top: 10%;
-    right: 10%; }
+    top: 0;
+    right: 0; }
     .header__navigation--list {
       list-style-type: none; }
     .header__navigation--item {
@@ -51,8 +71,26 @@ body {
       color: white; }
   .header__text-box {
     position: absolute;
-    top: 35%;
-    left: 10%;
+    top: 30%;
+    left: 0;
     border: 2px solid white;
     padding: 2rem 3rem;
-    width: 45%; }
+    overflow: hidden;
+    width: 55%; }
+
+.section-about {
+  margin: 12rem 0;
+  position: relative;
+  padding: 0 12rem; }
+  .section-about__image {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 78vh; }
+  .section-about__text-box {
+    position: absolute;
+    bottom: 0;
+    right: 5rem;
+    width: 40%;
+    background-color: white;
+    padding: 7rem 1rem 0 7rem; }

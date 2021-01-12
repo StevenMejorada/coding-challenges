@@ -1,0 +1,28 @@
+.project {
+  position: relative;
+  &__img {
+    object-fit: cover;
+    position: relative;
+  }
+  &__caption {
+    position: absolute;
+    bottom: 3rem;
+    left: 3rem;
+    width: 60%;
+  }
+  //   &::after {
+  //     content: "";
+  //     position: absolute;
+  //     top: 0;
+  //     right: 0;
+  //     bottom: 0;
+  //     left: 0;
+  //     background-image: linear-gradient(
+  //       to top,
+  //       rgba(rgb(255, 0, 0), 0.9),
+  //       transparent
+  //     );
+  //     background-size: cover;
+  //     background-position: center;
+  //   }
+}

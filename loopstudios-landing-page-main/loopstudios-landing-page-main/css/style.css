@@ -24,14 +24,20 @@ body {
   font-size: 5rem;
   text-transform: uppercase;
   color: white;
-  font-weight: 300;
-  line-height: 1; }
+  font-weight: 300; }
 
 .heading-secondary {
   font-family: "Josefin Sans", sans-serif;
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 300; }
+
+.heading-tertiary {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: white; }
 
 .paragraph {
   color: #8c8c8c;
@@ -41,42 +47,43 @@ body {
 .u-margin-bottom {
   margin-bottom: 2rem; }
 
-.header {
-  height: 95vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/desktop/image-hero.jpg");
-  background-size: cover;
-  background-position: top;
-  position: relative;
-  margin: 0 auto;
-  padding: 5rem 12rem; }
-  .header .container {
-    width: 100%;
-    height: 100%;
+.u-margin-bottom-lg {
+  margin-bottom: 4rem; }
+
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  border: 3px solid #8c8c8c;
+  padding: 0.5rem 2rem;
+  letter-spacing: 0.3em; }
+
+.project {
+  position: relative; }
+  .project__img {
+    object-fit: cover;
     position: relative; }
-  .header__logo {
+  .project__caption {
     position: absolute;
-    top: 0;
-    left: 0; }
-  .header__navigation {
-    position: absolute;
-    top: 0;
-    right: 0; }
-    .header__navigation--list {
-      list-style-type: none; }
-    .header__navigation--item {
-      display: inline-block;
-      margin: 0.5rem 0 0 2rem; }
-    .header__navigation--link {
-      text-decoration: none;
-      color: white; }
-  .header__text-box {
-    position: absolute;
-    top: 30%;
-    left: 0;
-    border: 2px solid white;
-    padding: 2rem 3rem;
-    overflow: hidden;
-    width: 55%; }
+    bottom: 3rem;
+    left: 3rem;
+    width: 60%; }
+
+.row {
+  max-width: 76vw;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 2rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 2rem; }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 2rem) / 4); }
 
 .header {
   height: 95vh;
@@ -131,3 +138,12 @@ body {
     width: 40%;
     background-color: white;
     padding: 7rem 1rem 0 7rem; }
+
+.section-projects {
+  margin: 0 auto;
+  width: 76vw;
+  position: relative; }
+  .section-projects .btn {
+    position: absolute;
+    top: 0;
+    right: 1rem; }

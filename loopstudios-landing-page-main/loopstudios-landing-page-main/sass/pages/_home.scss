@@ -18,3 +18,15 @@
     padding: 7rem 1rem 0 7rem;
   }
 }
+
+.section-projects {
+  margin: 0 auto;
+  width: 76vw;
+  position: relative;
+
+  .btn {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+  }
+}

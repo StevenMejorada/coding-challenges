@@ -1,0 +1,45 @@
+.footer {
+  background-color: $color-black;
+  padding: 5rem 0;
+  position: relative;
+
+  &__logo {
+    height: 1.5rem;
+  }
+
+  &__navigation {
+    &--list {
+      list-style-type: none;
+    }
+
+    &--item {
+      display: inline-block;
+      margin-right: 1rem;
+    }
+
+    &--link {
+      text-decoration: none;
+      color: $color-white;
+    }
+  }
+
+  &__socials {
+    position: absolute;
+    top: 5rem;
+    right: 12rem;
+    &--icon {
+      display: inline-block;
+      margin-right: 1rem;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__copyright {
+    font-size: 0.9rem;
+    position: absolute;
+    bottom: 5rem;
+    right: 12rem;
+  }
+}

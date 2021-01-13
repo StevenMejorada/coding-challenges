@@ -50,6 +50,10 @@ body {
 .u-margin-bottom-lg {
   margin-bottom: 4rem; }
 
+.wrapper {
+  margin: 0 auto;
+  padding: 0 12rem; }
+
 .btn {
   text-decoration: none;
   text-transform: uppercase;
@@ -68,6 +72,35 @@ body {
     bottom: 3rem;
     left: 3rem;
     width: 60%; }
+
+.footer {
+  background-color: black;
+  padding: 5rem 0;
+  position: relative; }
+  .footer__logo {
+    height: 1.5rem; }
+  .footer__navigation--list {
+    list-style-type: none; }
+  .footer__navigation--item {
+    display: inline-block;
+    margin-right: 1rem; }
+  .footer__navigation--link {
+    text-decoration: none;
+    color: white; }
+  .footer__socials {
+    position: absolute;
+    top: 5rem;
+    right: 12rem; }
+    .footer__socials--icon {
+      display: inline-block;
+      margin-right: 1rem; }
+      .footer__socials--icon:last-child {
+        margin-right: 0; }
+  .footer__copyright {
+    font-size: 0.9rem;
+    position: absolute;
+    bottom: 5rem;
+    right: 12rem; }
 
 .row {
   max-width: 76vw;
@@ -140,7 +173,7 @@ body {
     padding: 7rem 1rem 0 7rem; }
 
 .section-projects {
-  margin: 0 auto;
+  margin: 0 auto 10rem;
   width: 76vw;
   position: relative; }
   .section-projects .btn {

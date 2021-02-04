@@ -1,0 +1,45 @@
+.review {
+  padding: 2rem;
+  border-radius: 0.5rem;
+
+  &__profile {
+    display: flex;
+    align-items: center;
+
+    &-image {
+      margin-right: 1rem;
+      border-radius: 50%;
+      border: solid 2px $color-violet;
+      width: 2rem;
+      height: 2rem;
+    }
+
+    &-details {
+    }
+  }
+  &--1 {
+    grid-column: col-start 1 / col-end 2;
+    background-color: $color-violet;
+  }
+
+  &--2 {
+    grid-column: col-start 3 / col-end 3;
+    background-color: $color-grayish-blue;
+  }
+
+  &--3 {
+    grid-column: col-start 1 / col-end 1;
+    background-color: $color-white;
+  }
+
+  &--4 {
+    grid-column: col-start 2 / col-end 3;
+    background-color: $color-blackish-blue;
+  }
+
+  &--5 {
+    grid-column: col-start 4 / col-end 4;
+    grid-row: 1 / -1;
+    background-color: $color-white;
+  }
+}

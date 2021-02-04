@@ -1,0 +1,40 @@
+// COLOURS
+$color-violet: hsl(263, 55%, 52%);
+$color-grayish-blue: hsl(217, 19%, 35%);
+$color-blackish-blue: hsl(219, 29%, 14%);
+
+$color-white: hsl(0, 0%, 100%);
+
+$color-light-gray: hsl(0, 0%, 81%);
+$color-light-grayish-blue: hsl(210, 46%, 95%);
+
+// FONTS
+$font-primary: "Barlow Semi Condensed", sans-serif;
+
+// GUTTER
+$grid-gap: 20px;
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem=10px
+  font-family: $font-primary;
+  background-color: $color-light-grayish-blue;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 6rem repeat(4, [col-start] 1fr [col-end]) 6rem;
+  grid-template-rows: repeat(2, minmax(40vh, 1fr));
+  grid-gap: $grid-gap;
+}
+
+.reviews {
+  margin: 10rem 0;
+}

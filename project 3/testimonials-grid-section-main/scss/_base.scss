@@ -12,7 +12,14 @@ $color-light-grayish-blue: hsl(210, 46%, 95%);
 $font-primary: "Barlow Semi Condensed", sans-serif;
 
 // GUTTER
-$grid-gap: 20px;
+$grid-gap: 2.2rem;
+
+// BREAKPOINTS
+$bp-largest: 81.25em; // 1300px
+$bp-large: 68.75em; // 1100px
+$bp-medium: 62.5em; // 1000px;
+$bp-small: 37.5em; // 600px;
+
 *,
 *::after,
 *::before {
@@ -21,20 +28,39 @@ $grid-gap: 20px;
   box-sizing: inherit;
 }
 
+html {
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 90%;
+  }
+}
 body {
   box-sizing: border-box;
-  font-size: 62.5%; // 1rem=10px
   font-family: $font-primary;
   background-color: $color-light-grayish-blue;
 }
 
 .container {
   display: grid;
-  grid-template-columns: 6rem repeat(4, [col-start] 1fr [col-end]) 6rem;
-  grid-template-rows: repeat(2, minmax(40vh, 1fr));
+  grid-template-columns: 8rem repeat(4, [col-start] 1fr [col-end]) 8rem;
+  grid-template-rows: repeat(2, minmax(min-content, 1fr));
   grid-gap: $grid-gap;
+
+  @media only screen and (max-width: $bp-largest) {
+    grid-template-columns: 5rem repeat(4, [col-start] 1fr [col-end]) 5rem;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    grid-template-columns: 1rem repeat(4, [col-start] 1fr [col-end]) 1rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-columns: 7rem [col-start] 1fr [col-end] 7rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    grid-template-columns: 1rem [col-start] 1fr [col-end] 1rem;
+  }
 }
 
 .reviews {
-  margin: 10rem 0;
+  margin: 5rem 0;
 }

@@ -1,6 +1,12 @@
 .review {
+  position: relative;
   padding: 2rem;
   border-radius: 0.5rem;
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  grid-gap: 1.3rem;
+
+  box-shadow: 5px 5px 50px rgba(black, 0.1);
 
   &__profile {
     display: flex;
@@ -9,9 +15,11 @@
     &-image {
       margin-right: 1rem;
       border-radius: 50%;
-      border: solid 2px $color-violet;
+      border: solid 2px currentColor;
       width: 2rem;
       height: 2rem;
+      position: relative;
+      z-index: 2;
     }
 
     &-details {
@@ -19,27 +27,60 @@
   }
   &--1 {
     grid-column: col-start 1 / col-end 2;
+    @media only screen and (max-width: $bp-medium) {
+      grid-column: col-start / col-end;
+    }
     background-color: $color-violet;
+
+    color: $color-white;
+
+    &::before {
+      content: url(../images/bg-pattern-quotation.svg);
+      position: absolute;
+      z-index: 1;
+      right: 5rem;
+      top: 1rem;
+    }
   }
 
   &--2 {
     grid-column: col-start 3 / col-end 3;
     background-color: $color-grayish-blue;
+
+    color: $color-white;
+    @media only screen and (max-width: $bp-medium) {
+      grid-column: col-start / col-end;
+    }
   }
 
   &--3 {
     grid-column: col-start 1 / col-end 1;
     background-color: $color-white;
+    @media only screen and (max-width: $bp-medium) {
+      grid-column: col-start / col-end;
+    }
+
+    color: $color-grayish-blue;
   }
 
   &--4 {
     grid-column: col-start 2 / col-end 3;
     background-color: $color-blackish-blue;
+    @media only screen and (max-width: $bp-medium) {
+      grid-column: col-start / col-end;
+    }
+
+    color: $color-white;
   }
 
   &--5 {
     grid-column: col-start 4 / col-end 4;
     grid-row: 1 / -1;
     background-color: $color-white;
+    @media only screen and (max-width: $bp-medium) {
+      grid-column: col-start / col-end;
+    }
+
+    color: $color-grayish-blue;
   }
 }

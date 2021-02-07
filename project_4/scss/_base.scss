@@ -1,0 +1,28 @@
+// Colors
+$color-pink: hsl(322, 100%, 66%);
+$color-pink-light: hsl(321, 100%, 78%);
+$color-red-light: hsl(0, 100%, 63%);
+
+$color-cyan-dark: hsl(192, 100%, 9%);
+$color-blue-pale: hsl(207, 100%, 98%);
+
+// Typography
+$font-primary: "Open Sans"; // 400,600,700
+$font-secondary: "Poppins"; // 700
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px
+}
+
+body {
+  box-sizing: border-box;
+  font-family: $font-primary;
+}

@@ -41,8 +41,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .features__feature-image {
-    height: 90vh; }
+  .features__image {
+    width: 80vw; }
   .features__feature-box {
     display: flex;
     width: 80%;
